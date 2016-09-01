@@ -6,7 +6,7 @@ def random_kid():
     return random.choice(["boy", "girl"])
 
 def uniform_pdf(x):
-    return 1 if x >= 0 and x < 1 else 0
+    return 1 if 0 <= x < 1 else 0
 
 def uniform_cdf(x):
     "returns the probability that a uniform random variable is less than x"
